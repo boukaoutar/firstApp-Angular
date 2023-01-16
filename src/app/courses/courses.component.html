@@ -1,0 +1,11 @@
+<p> Interpolation : {{ titre }} et {{ 3 + 4}} </p>
+<p> Interpolation : {{ getTitle() }} </p>
+
+<input type="text" [value]="ma_valeur" />
+
+<p> Interpolation à runtime: {{ getTitle() }} </p>
+<input type="text" (click)="updateTitle ()" />
+
+<p> Interpolation à runtime 2 : {{ getTitle() }} </p>
+<input type="text" [(ngModel)]="titre" />
+
