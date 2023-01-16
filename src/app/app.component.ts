@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'firstApp-angular';
+
+  title: string = 'liste des courses';
+  ma_valeur: string = "valeur initiale";
+
+  getTitle () {
+    return this.title;
+  }
+
+  modifTitle() {
+    this.title = 'nouveau titre';
+  }
+
 }
