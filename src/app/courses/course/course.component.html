@@ -1,0 +1,6 @@
+<!-- <p> Cours : {{contenu.titre}} -- {{contenu.nb_etud}} étudiants</p> -->
+
+<p> Cours : {{contenu.titre}} </p>
+<input name="{{contenu.titre}}" 
+    [(ngModel)] = "contenu.nb_etud"
+    (change)="updateNb()" /> étudiants

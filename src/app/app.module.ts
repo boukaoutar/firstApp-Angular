@@ -7,11 +7,13 @@ import { CoursesComponent } from './courses/courses.component';
 
 //Pour utiliser ngModel : importation 
 import { FormsModule } from '@angular/forms';
+import { CourseComponent } from './courses/course/course.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesComponent
+    CoursesComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,

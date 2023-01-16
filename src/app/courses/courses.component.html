@@ -1,11 +1,16 @@
-<p> Interpolation : {{ titre }} et {{ 3 + 4}} </p>
-<p> Interpolation : {{ getTitle() }} </p>
+<!-- <p> Interpolation : {{ titre }} et {{ 3 + 4}} </p>
+<p> Interpolation : {{ getTitle() }} </p> -->
 
-<input type="text" [value]="ma_valeur" />
+<!-- <input type="text" [value]="ma_valeur" /> -->
 
-<p> Interpolation à runtime: {{ getTitle() }} </p>
-<input type="text" (click)="updateTitle ()" />
+<!-- <p> Interpolation à runtime: {{ getTitle() }} </p>
+<input type="text" (click)="updateTitle ()" />  -->
 
 <p> Interpolation à runtime 2 : {{ getTitle() }} </p>
-<input type="text" [(ngModel)]="titre" />
+<input type="text" [(ngModel)]="titre" /> 
+
+<app-course [contenu]="UE[0]" (newNb)="onNewNb($event)"></app-course>
+<app-course [contenu]="UE[1]" (newNb)="onNewNb($event)"></app-course>
+
+
 
